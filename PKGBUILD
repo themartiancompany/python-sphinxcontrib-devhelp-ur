@@ -2,7 +2,7 @@
 
 _name=sphinxcontrib_devhelp
 pkgname=python-sphinxcontrib-devhelp
-pkgver=1.0.4
+pkgver=1.0.5
 pkgrel=1
 pkgdesc='Sphinx extension which outputs Devhelp document'
 arch=('any')
@@ -11,8 +11,8 @@ license=('BSD')
 makedepends=('python-build' 'python-flit-core' 'python-installer')
 checkdepends=('python-pytest' 'python-sphinx')
 source=("https://files.pythonhosted.org/packages/source/${_name::1}/$_name/$_name-$pkgver.tar.gz")
-sha256sums=('4fd751c63dc40895ac8740948f26bf1a3c87e4e441cc008672abd1cb2bc8a3d1')
-b2sums=('e8e7460259f48c7373fe97ee70a5c358a5df21233d165645a15ba72f3fb1fd7bc3fba367efd56b27ee5861b6bed6fd14f9e22acd08b345e70b5241b3366e2bff')
+sha256sums=('63b41e0d38207ca40ebbeabcf4d8e51f76c03e78cd61abe118cf4435c73d4212')
+b2sums=('f9c46d07888eab1bddcecce3a862fe503a0187620768a40f360fa985dee9cfaaf8d28f03c6a08e0b174788639675ee715141287bd7bf04ff403459e9858e4f9c')
 
 build() {
   cd $_name-$pkgver
