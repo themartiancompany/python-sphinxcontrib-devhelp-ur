@@ -1,0 +1,18 @@
+pkgbase = python-sphinxcontrib-devhelp
+	pkgdesc = Sphinx extension which outputs Devhelp document
+	pkgver = 1.0.6
+	pkgrel = 1
+	url = https://github.com/sphinx-doc/sphinxcontrib-devhelp
+	arch = any
+	license = BSD-2-Clause
+	checkdepends = python-pytest
+	checkdepends = python-sphinx
+	makedepends = git
+	makedepends = python-build
+	makedepends = python-flit-core
+	makedepends = python-installer
+	depends = python
+	source = git+https://github.com/sphinx-doc/sphinxcontrib-devhelp.git#tag=1.0.6
+	b2sums = SKIP
+
+pkgname = python-sphinxcontrib-devhelp
