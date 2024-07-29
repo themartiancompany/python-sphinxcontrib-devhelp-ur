@@ -3,7 +3,7 @@
 pkgname=python-sphinxcontrib-devhelp
 _name=${pkgname#python-}
 pkgver=2.0.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Sphinx extension which outputs Devhelp document'
 arch=(any)
 url=https://github.com/sphinx-doc/sphinxcontrib-devhelp
@@ -29,9 +29,7 @@ build() {
 
 check() {
   cd "$_name"
-  python -m venv --system-site-packages test-env
-  test-env/bin/python -m installer dist/*.whl
-  test-env/bin/python -m pytest
+  PYTHONPATH="sphinxcontrib/devhelp:$PYTHONPATH" pytest
 }
 
 package() {
